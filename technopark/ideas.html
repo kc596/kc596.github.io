@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TechnoPark is a strategically devised innovation park of its kind. The park aims to provide ample opportunities to new innovation, start-ups and ideas for their evolution to next level. The TechnoPark is a stage to display innovative skills to the world, with cutting edge competition between student’s team participating from different colleges. TechnoPark wishes to provide investment opportunities to the deserving team through a simple selection process.">
+    <meta name="author" content="NIT Silchar">
+
+    <title>TechnoPark | Innovation-Investment Opportunity</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	<link rel="icon" href="images/tp-favicon.png">
+    <!-- <link href="css/styles-index.css" rel="stylesheet"> -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+.upvote-icon:hover{
+	background:url('images/ideas/thumb-up-active.png') !important;
+	background-size:100% 100% !important;
+}
+.downvote-icon:hover{
+	background:url('images/ideas/thumb-down-active.png') !important;
+	background-size:100% 100% !important;
+}
+.upvote-icon.active{
+	background:url('images/ideas/thumb-up-active.png') !important;
+	background-size:100% 100% !important;
+}
+</style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="col-md-12">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<img src="images/tp-logo.png" width=50 height=50 style="float:left;">
+                <a class="navbar-brand" href="index.html" style="font-family:'And Black'; font-weight:bold; font-size:2em; color:#27B3E7;">TechnoPark</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="ideas.html">Browse & Vote</a>
+                    </li>
+                    <!-- <li>
+                        <a href="https://docs.google.com/forms/d/1geQdsZmBMUYoIP1zgZ5VJ3pekaoIQo1IM5EDoNTH7bo/viewform" target="_blank">Participate</a>
+                    </li> -->
+                    <li>
+                        <a href="#" class="login-button"><i class="fa fa-facebook fa-lg"></i> Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<!-- Page Content -->
+<div class="container">
+	
+	<!--tab with image-->
+	<div class="col-lg-12 col-sm-12" style="margin-top:12px; padding:0;">
+			<div class="card hovercard cover">
+				
+			</div>
+		<div class="col-sm-9" style="padding:0;" id="home">
+			<div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+				<a href="index.html#about" class="btn-group">
+					<button type="button" id="stars" class="btn btn-default"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						<div class="hidden-xs hidden-sm" style="font-family: 'Fjalla One',Arial; letter-spacing: +1px;">Overview</div>
+					</button>
+				</a>
+				<a href="index.html#prizes" class="btn-group">
+					<button type="button" id="prize" class="btn btn-default"><span class=" glyphicon glyphicon-star" aria-hidden="true"></span>
+						<div class="hidden-xs hidden-sm" style="font-family: 'Fjalla One',Arial; letter-spacing: +1px;">Prizes</div>
+					</button>
+				</a>
+				<a href="index.html#important-dates" class="btn-group">
+					<button type="button" id="favorites" class="btn btn-default"><span class=" glyphicon glyphicon-calendar" aria-hidden="true"></span>
+						<div class="hidden-xs hidden-sm" style="font-family: 'Fjalla One',Arial; letter-spacing: +1px;">Important Dates</div>
+					</button>
+				</a>
+				<a href="index.html#guidelines-terms" class="btn-group">
+					<button type="button" id="terms" class="btn btn-default"><span class=" glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+						<div class="hidden-xs hidden-sm" style="font-family: 'Fjalla One',Arial; letter-spacing: +1px;">Guidelines & Terms</div>
+					</button>
+				</a>
+				<a href="index.html#team" class="btn-group">
+					<button type="button" id="following" class="btn btn-default"><span class=" glyphicon glyphicon-user" aria-hidden="true"></span>
+						<div class="hidden-xs hidden-sm" style="font-family: 'Fjalla One',Arial; letter-spacing: +1px;">Our Team</div>
+					</button>
+				</a>
+			</div>
+			<hr class="best-separator" style="margin:10px;">
+			
+			<div class="row">
+					
+                    <div class="col-sm-6 col-lg-6 col-md-6 idea-thumb">
+                        <div class="thumbnail idea-thumb-container">
+                            <img src="images/e800-300.jpg" alt="">
+                            <div class="col-md-12">
+                                <h4 class="idea-thumb-heading">
+									<a href="idea001.html">A very very long idea name</a>
+                                </h4>
+                                <p class="idea-thumb-description">International College of National Institute of TechnoPark, Silchar, Asia</p>
+                            </div>
+							<hr class="best-separator idea-thumb-hr">
+                            <div class="ratings col-xs-12" style="">  
+                                <div class="col-xs-6 idea-upvote-container">
+									<div class="img-responsive upvote-icon"></div>
+									<p class="idea-vote-count">75</p>
+                                </div>
+                                <div class="col-xs-6 idea-downvote-container">
+									<div class="img-responsive downvote-icon"></div>
+									<p class="idea-vote-count">97</p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+					
+                    <div class="col-sm-6 col-lg-6 col-md-6 idea-thumb">
+                        <div class="thumbnail idea-thumb-container">
+                            <img src="images/text800-300.png" alt="">
+                            <div class="col-md-12">
+                                <h4 class="idea-thumb-heading">
+									<a href="idea001.html">A very very long idea name</a>
+                                </h4>
+                                <p class="idea-thumb-description">International College of National Institute of TechnoPark, Silchar, Asia</p>
+                            </div>
+							<hr class="best-separator idea-thumb-hr">
+                            <div class="ratings col-xs-12" style="">  
+                                <div class="col-xs-6 idea-upvote-container">
+									<div class="img-responsive upvote-icon"></div>
+									<p class="idea-vote-count">75</p>
+                                </div>
+                                <div class="col-xs-6 idea-downvote-container">
+									<div class="img-responsive downvote-icon"></div>
+									<p class="idea-vote-count">97</p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+					
+                    <div class="col-sm-6 col-lg-6 col-md-6 idea-thumb">
+                        <div class="thumbnail idea-thumb-container">
+                            <img src="images/text800-300.png" alt="">
+                            <div class="col-md-12">
+                                <h4 class="idea-thumb-heading">
+									<a href="idea001.html">A very very long idea name</a>
+                                </h4>
+                                <p class="idea-thumb-description">International College of National Institute of TechnoPark, Silchar, Asia</p>
+                            </div>
+							<hr class="best-separator idea-thumb-hr">
+                            <div class="ratings col-xs-12" style="">  
+                                <div class="col-xs-6 idea-upvote-container">
+									<div class="img-responsive upvote-icon"></div>
+									<p class="idea-vote-count">75</p>
+                                </div>
+                                <div class="col-xs-6 idea-downvote-container">
+									<div class="img-responsive downvote-icon"></div>
+									<p class="idea-vote-count">97</p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+					
+                    <div class="col-sm-6 col-lg-6 col-md-6 idea-thumb">
+                        <div class="thumbnail idea-thumb-container">
+                            <img src="images/text800-300.png" alt="">
+                            <div class="col-md-12">
+                                <h4 class="idea-thumb-heading">
+									<a href="idea001.html">A very very long idea name</a>
+                                </h4>
+                                <p class="idea-thumb-description">International College of National Institute of TechnoPark, Silchar, Asia</p>
+                            </div>
+							<hr class="best-separator idea-thumb-hr">
+                            <div class="ratings col-xs-12" style="">  
+                                <div class="col-xs-6 idea-upvote-container">
+									<div class="img-responsive upvote-icon"></div>
+									<p class="idea-vote-count">75</p>
+                                </div>
+                                <div class="col-xs-6 idea-downvote-container">
+									<div class="img-responsive downvote-icon"></div>
+									<p class="idea-vote-count">97</p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+					
+                    <div class="col-sm-6 col-lg-6 col-md-6 idea-thumb">
+                        <div class="thumbnail idea-thumb-container">
+                            <img src="images/text800-300.png" alt="">
+                            <div class="col-md-12">
+                                <h4 class="idea-thumb-heading">
+									<a href="idea001.html">A very very long idea name</a>
+                                </h4>
+                                <p class="idea-thumb-description">International College of National Institute of TechnoPark, Silchar, Asia</p>
+                            </div>
+							<hr class="best-separator idea-thumb-hr">
+                            <div class="ratings col-xs-12" style="">  
+                                <div class="col-xs-6 idea-upvote-container">
+									<div class="img-responsive upvote-icon"></div>
+									<p class="idea-vote-count">75</p>
+                                </div>
+                                <div class="col-xs-6 idea-downvote-container">
+									<div class="img-responsive downvote-icon"></div>
+									<p class="idea-vote-count">97</p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+					
+                    <div class="col-sm-6 col-lg-6 col-md-6 idea-thumb">
+                        <div class="thumbnail idea-thumb-container">
+                            <img src="images/text800-300.png" alt="">
+                            <div class="col-md-12">
+                                <h4 class="idea-thumb-heading">
+									<a href="idea001.html">A very very long idea name</a>
+                                </h4>
+                                <p class="idea-thumb-description">International College of National Institute of TechnoPark, Silchar, Asia</p>
+                            </div>
+							<hr class="best-separator idea-thumb-hr">
+                            <div class="ratings col-xs-12" style="">  
+                                <div class="col-xs-6 idea-upvote-container">
+									<div class="img-responsive upvote-icon"></div>
+									<p class="idea-vote-count">75</p>
+                                </div>
+                                <div class="col-xs-6 idea-downvote-container">
+									<div class="img-responsive downvote-icon"></div>
+									<p class="idea-vote-count">97</p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+					
+                    <div class="col-sm-6 col-lg-6 col-md-6 idea-thumb">
+                        <div class="thumbnail idea-thumb-container">
+                            <img src="images/text800-300.png" alt="">
+                            <div class="col-md-12">
+                                <h4 class="idea-thumb-heading">
+									<a href="idea001.html">A very very long idea name</a>
+                                </h4>
+                                <p class="idea-thumb-description">International College of National Institute of TechnoPark, Silchar, Asia</p>
+                            </div>
+							<hr class="best-separator idea-thumb-hr">
+                            <div class="ratings col-xs-12" style="">  
+                                <div class="col-xs-6 idea-upvote-container">
+									<div class="img-responsive upvote-icon"></div>
+									<p class="idea-vote-count">75</p>
+                                </div>
+                                <div class="col-xs-6 idea-downvote-container">
+									<div class="img-responsive downvote-icon"></div>
+									<p class="idea-vote-count">97</p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+					
+                    <div class="col-sm-6 col-lg-6 col-md-6 idea-thumb">
+                        <div class="thumbnail idea-thumb-container">
+                            <img src="images/text800-300.png" alt="">
+                            <div class="col-md-12">
+                                <h4 class="idea-thumb-heading">
+									<a href="idea001.html">A very very long idea name</a>
+                                </h4>
+                                <p class="idea-thumb-description">International College of National Institute of TechnoPark, Silchar, Asia</p>
+                            </div>
+							<hr class="best-separator idea-thumb-hr">
+                            <div class="ratings col-xs-12" style="">  
+                                <div class="col-xs-6 idea-upvote-container">
+									<div class="img-responsive upvote-icon"></div>
+									<p class="idea-vote-count">75</p>
+                                </div>
+                                <div class="col-xs-6 idea-downvote-container">
+									<div class="img-responsive downvote-icon"></div>
+									<p class="idea-vote-count">97</p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+					
+                    <div class="col-sm-6 col-lg-6 col-md-6 idea-thumb">
+                        <div class="thumbnail idea-thumb-container">
+                            <img src="images/text800-300.png" alt="">
+                            <div class="col-md-12">
+                                <h4 class="idea-thumb-heading">
+									<a href="idea001.html">A very very long idea name</a>
+                                </h4>
+                                <p class="idea-thumb-description">International College of National Institute of TechnoPark, Silchar, Asia</p>
+                            </div>
+							<hr class="best-separator idea-thumb-hr">
+                            <div class="ratings col-xs-12" style="">  
+                                <div class="col-xs-6 idea-upvote-container">
+									<div class="img-responsive upvote-icon"></div>
+									<p class="idea-vote-count">75</p>
+                                </div>
+                                <div class="col-xs-6 idea-downvote-container">
+									<div class="img-responsive downvote-icon"></div>
+									<p class="idea-vote-count">97</p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+					
+                    <div class="col-sm-6 col-lg-6 col-md-6 idea-thumb">
+                        <div class="thumbnail idea-thumb-container">
+                            <img src="images/text800-300.png" alt="">
+                            <div class="col-md-12">
+                                <h4 class="idea-thumb-heading">
+									<a href="idea001.html">A very very long idea name</a>
+                                </h4>
+                                <p class="idea-thumb-description">International College of National Institute of TechnoPark, Silchar, Asia</p>
+                            </div>
+							<hr class="best-separator idea-thumb-hr">
+                            <div class="ratings col-xs-12" style="">  
+                                <div class="col-xs-6 idea-upvote-container">
+									<div class="img-responsive upvote-icon"></div>
+									<p class="idea-vote-count">75</p>
+                                </div>
+                                <div class="col-xs-6 idea-downvote-container">
+									<div class="img-responsive downvote-icon"></div>
+									<p class="idea-vote-count">97</p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+					
+					
+
+
+                </div>
+		</div><!--col-sm-->	
+		
+		<div class="col-sm-3 col-xs-12" style="padding:0; margin-left:auto; margin-right:auto;"><!--sponsors-->
+			
+			<hr>
+			<div class="col-md-12 sponsors-container" style="background:#fff; padding:20px auto;">
+				
+				<div class="row">
+					<h5 class="sponsors-heading">INVESTMENT PARTNERS</h5>
+					<center><a><img class="img-responsive sponsors-image" height=100 width=140 src="images/calcutta-angels.png" style="display:inline; margin-right:1%;"></a>
+					<a><img class="img-responsive sponsors-image" height=100 width=100 src="images/Palaash.jpg" style="display:inline;"></a></center>
+				</div>
+				<hr style="display:block; width:100%; clear:both; border-color:transparent; margin:10px;">
+								
+				<div class="row">
+					<h5 class="sponsors-heading">INCUBATION PARTNER</h5>
+					<a><img class="img-responsive sponsors-image" height=100 src="images/91springboard.png"></a>
+				</div>
+				<hr style="display:block; width:100%; clear:both; border-color:transparent; margin:10px;">
+				
+				<div class="row">
+					<h5 class="sponsors-heading">MEDIA PARTNERS</h5>
+					<center><a href=""><img class="img-responsive sponsors-image" height=100 width=100 src="images/YourStory.png" style="display:inline; margin-right:1%;"></a>
+					<a><img class="img-responsive sponsors-image" height=100 width=100 src="images/eastern-chronicle.jpg" style="display:inline; margin-left:1%;"></a></center>
+				</div>
+				<hr style="display:block; width:100%; clear:both; border-color:transparent; margin:10px;">
+				
+				<div class="row">
+					<h5 class="sponsors-heading">MENTOR</h5>
+					<a><img class="img-responsive sponsors-image" height=100 width=150 src="images/google_developers.png"></a>
+				</div>
+				<hr style="display:block; width:100%; clear:both; border-color:transparent; margin:10px;">
+				
+				<div class="row">
+					<h5 class="sponsors-heading">OUTREACH PARTNER</h5>
+					<a><img class="img-responsive sponsors-image" height=100 width=150 src="images/the-better-india-logo.png"></a>
+				</div>
+				<hr style="display:block; width:100%; clear:both; border-color:transparent; margin:10px;">
+				
+				<div class="row">
+					<h5 class="sponsors-heading">FOOD & BEVERAGE PARTNER</h5>
+					<a><img class="img-responsive sponsors-image" height=100 width=150 src="images/subway_logo.png"></a>
+				</div>
+				<hr style="display:block; width:100%; clear:both; border-color:transparent; margin:10px;">
+				
+				<div class="row">
+					<h5 class="sponsors-heading">PLATFORM PARTNER</h5>
+					<a><img class="img-responsive sponsors-image" height=100 width=150 src="images/HE_logo.png"></a>
+				</div>
+				<hr style="display:block; width:100%; clear:both; border-color:transparent; margin:10px;">
+				
+				<div class="row">
+					<h5 class="sponsors-heading">ONLINE SHOPPING PARTNER</h5>
+					<a><img class="img-responsive sponsors-image" height=100 width=150 src="images/ebay.jpg"></a>
+				</div>
+				<hr style="display:block; width:100%; clear:both; border-color:transparent;">
+			</div>
+		</div>
+    </div>
+	<!--/tab with image-->
+</div><!-- closing container-->
+	
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+<!--footer-->
+<footer class="footer1">
+<div class="container">
+
+<div class="row"><!-- row -->
+            
+                <div class="col-sm-4"><!-- widgets column left -->
+                <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        
+                        	<li class="widget-container widget_nav_menu"><!-- widgets list -->
+                    
+                                <h1 class="title-widget">Useful links</h1>
+                                
+                                <ul>
+                                	<li><a class="navigator" href="index.html#about"><i class="fa fa-angle-double-right"></i> Overview</a></li>
+                                	<li><a class="navigator" href="index.html#prizes"><i class="fa fa-angle-double-right"></i> Prizes</a></li>
+                                    <li><a class="navigator" href="index.html#important-dates"><i class="fa fa-angle-double-right"></i> Important Dates</a></li>
+                                    <li><a class="navigator" href="index.html#guidelines-terms"><i class="fa fa-angle-double-right"></i> Guidelines & Terms</a></li>
+                                    <li><a class="navigator" href="index.html#team"><i class="fa fa-angle-double-right"></i> Our Team</a></li>
+                                </ul>
+                    
+							</li>
+                            
+                        </ul>
+                         
+                      
+                </div><!-- widgets column left end -->
+                
+                
+                
+                <div class="col-sm-4">            
+                <ul class="list-unstyled clear-margins">                        
+                        	<li class="widget-container widget_nav_menu">                    
+                                <h1 class="title-widget">Spotlight</h1>                                
+                                <ul>
+ 									<li><a  href="http://nits.ac.in/" target="_blank"><i class="fa fa-angle-double-right"></i>  NIT Silchar</a></li>
+                                    <li><a  href="ideas.html"><i class="fa fa-angle-double-right"></i>  Browse and Vote</a></li>
+                                    
+                                    <li><a  href="https://docs.google.com/forms/d/1eOmZxNNcHuxn0AluUbmBPNbfvwdCqPRn7hhwZHn5hkY/viewform" target="_blank"><i class="fa fa-angle-double-right"></i>  Become Campus Ambassador</a></li>
+                                    <li><a href="mailto:innovationlabnits@gmail.com" target="_blank"><i class="fa fa-angle-double-right"></i>  Become A Sponsor</a></li>
+                                </ul>                    
+							</li>                            
+                        </ul>          
+                </div> <!-- widgets column left end -->
+				
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3"><!-- widgets column center -->
+                        <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        	<li class="widget-container widget_recent_news"><!-- widgets list -->                    
+                                <h1 class="title-widget">Contact Details </h1>                                
+                                <div class="footerp">                                 
+                                <h2 class="title-median">INDOVATION LAB</h2>    
+								<p><b>National Institute Of Technology, Silchar</b><br>Cachar, Assam<br>PIN-788010</p>	
+                                <p><b>Email id:</b> <a href="mailto:innovationlabnits@gmail.com">innovationlabnits@gmail.com</a></p>
+                                </div>                                
+                                <div class="social-icons">                                
+                                	<ul class="nomargin" style="text-align:center;">
+                                    
+                <a href="https://www.facebook.com/technopark.nits"><i class="fa fa-facebook-square fa-3x social-fb" id="social"></i></a>
+	            <!-- <a href="https://twitter.com/"><i class="fa fa-twitter-square fa-3x social-tw" id="social"></i></a>
+	            <a href="https://plus.google.com/"><i class="fa fa-google-plus-square fa-3x social-gp" id="social"></i></a> -->
+	            <a href="mailto:team.technopark15@gmail.com"><i class="fa fa-envelope-square fa-3x social-em" id="social"></i></a>
+                                    
+                                    </ul>
+                                </div>
+                    		</li>
+                          </ul>
+                       </div>
+
+			
+                </div>
+</div>
+</footer>
+
+
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<div class="copyright">
+									© 2016, TechnoPark, All rights reserved
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<div class="design">
+									 <a>Indovation Lab</a> |  <a target="_blank" href="http://nits.ac.in">NIT Silchar</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$(".upvote-icon").click(function(){
+			$(this).addClass("active");
+		});
+	});
+	window.onload = function() {
+		//$('button[href=' + location.hash + ']').click();
+		//window.location.href=window.location.hash;
+		//location.hash="";
+	}
+	</script>
+</body>
+
+</html>
