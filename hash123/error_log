@@ -1,0 +1,1 @@
+[26-Jan-2016 18:08:50 UTC] PHP Fatal error:  Call to undefined function sessionstart() in /home/incandescence/public_html/dp/index.php on line 2
