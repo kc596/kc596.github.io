@@ -1,0 +1,124 @@
+@font-face{
+	font-family:'christopherHand';
+	src:url('../fonts/comesinhandy.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family:'SquadaOne-Regular';
+	src:url('../fonts/SquadaOne-Regular.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family:'ThirstyRoughRegOne';
+	src:url('../fonts/ThirstyRoughRegOne.otf') format('opentype');
+	font-style:normal;
+}
+@font-face{
+	font-family:'Asfalto';
+	src:url('../fonts/Fernando Forero - Asfalto.otf') format('opentype');
+	font-weight:normal;
+	font-style:normal;
+}
+  @font-face{
+	font-family:'Timber';
+	src:url('../fonts/Timber.otf') format('opentype');
+	src:url('../fonts/Timber.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+	}
+body {
+	background:url('../images/bg.png') no-repeat fixed;
+    background-size: cover;
+}
+.nodis{
+	display:none !important;
+}
+.myHiddenItem{
+	display:none;
+}
+a:link{
+	text-decoration:none;
+}
+a:visited{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:none;
+}
+a:active{
+	text-decoration:none;
+}
+/*
+	########## controling navigation ##########
+*/
+@media only screen and (max-width:767px){
+	.cloud{
+		display:none !important;
+	}
+	.mylogoimage{
+		width:100%;
+	}
+	.mylogoimage img{
+		height:100%;
+		max-height:150px;
+	}
+}
+@media only screen and (min-width:767px){
+	nav.originalnavigation{
+		display:none;
+	}
+}
+nav.originalnavigation{
+	background:transparent;
+}
+nav.originalnavigation li{
+	text-align:center;
+	font-family: christopherHand , cursive !important;
+	font-size:1.2em;
+}
+.navbar-default .navbar-nav>li>a{
+	color:#fff;
+}
+.navbar-default .navbar-collapse{
+	border-color:transparent;
+}
+.navbar-default{
+	border-color:transparent;
+}
+.navbar-default .navbar-toggle .icon-bar{
+	background-color:#fff;
+}
+.navbar-default .navbar-toggle:hover{
+	background-color:#000;
+}
+.navbar-default .navbar-toggle:focus{
+	background-color:#000;
+}
+.cloud{
+	width: 13.5%;
+    position: relative;  
+}
+.cloud .text{
+	font-family: "christopherHand",cursive;
+	font-size:3.5vh;
+	color: #2d8cad;
+	position: absolute;
+}
+@media only screen and (min-width:1200px){
+	.cloud .text{
+		font-size:2.5em;
+	}
+}
+/*
+	########## /controling navigation ##########
+*/
+.box-content{
+	background-color:rgba(233,233,235,0.89) !important;
+	border-radius:20px;
+}
+
+
+::-moz-selection { background: #fd625e; color: #fff; text-shadow: none; }
+::selection { background: #fd625e; color: #fff; text-shadow: none; }
