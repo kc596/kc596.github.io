@@ -654,7 +654,7 @@ body .buttons-wrapper .slider > li:nth-child(4) {
     font-weight: 200;
 }
 .banner-w3lsinfo {
-    background: url(../images/dott.png)repeat 0px 0px;
+    background: #000;
     padding: 3em 0 7.2em;
 }
 .header-w3left img {
