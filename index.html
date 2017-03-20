@@ -20,7 +20,7 @@
 		<input id="slide3" class="w3slider-input" type="radio" name="slider">
 		<input id="slide4" class="w3slider-input" type="radio" name="slider"> 
 		<ul class="slider">
-			<li class="agileits" id="first"> 
+			<li class="agileits"> 
 				<!-- banner -->
 				<div class="banner">
 					<div class="banner-w3lsinfo">
@@ -415,9 +415,11 @@
 			interval: 100,
 			decimals: 0,
 		});
-		$('#first').css("background", "url(images/slide1.jpg)no-repeat center center");
-		$('.banner-w3lsinfo').css("background", "url(images/dott.png)repeat 0px 0px");
 	}); 
+
+	window.onload = function(){
+		$('body .buttons-wrapper .slider > li').css("visibility", "visible");
+	}
 	</script>
     <script src="js/bootstrap.js"></script>
     <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
