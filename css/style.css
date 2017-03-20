@@ -4,9 +4,6 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
-div.abcdxxx{
-	background: url(../images/slide1.jpg)no-repeat center center;
-}
 @font-face{font-family:'Jura';src:url('../fonts/Jura-Regular.ttf');src:url('../fonts/Jura-Regular.ttf') format('truetype');font-weight:normal;font-style:normal;}
 @font-face{
 	font-family:'Cabana';
@@ -570,7 +567,7 @@ body .buttons-wrapper .slider > li {
 	background:#000;  
 }
 body .buttons-wrapper .slider > li:nth-child(1) {
-	background: url(../images/slide1.jpg)no-repeat center center;
+	background: #000;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-ms-background-size: cover;

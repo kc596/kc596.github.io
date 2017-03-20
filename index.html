@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/swipebox.css">
 	<script src="js/jquery-2.2.3.min.js"></script>  
 </head>
-<body>  
+<body>
 	<!-- main --> 
 	<div class="buttons-wrapper"> 
 		<input id="slide1" class="w3slider-input" type="radio" name="slider" checked>
@@ -20,7 +20,7 @@
 		<input id="slide3" class="w3slider-input" type="radio" name="slider">
 		<input id="slide4" class="w3slider-input" type="radio" name="slider"> 
 		<ul class="slider">
-			<li class="agileits"> 
+			<li class="agileits" id="first"> 
 				<!-- banner -->
 				<div class="banner">
 					<div class="banner-w3lsinfo">
@@ -407,16 +407,15 @@
 	</script> 
 	
 	<script src="js/skill.bars.jquery.js"></script> 
-	<script> 
+	<script>
 	$(document).ready(function(){
-		
 		$('.skillbar').skillBars({
 			from: 0,
 			speed: 4000, 
 			interval: 100,
 			decimals: 0,
 		});
-		
+		$('#first').css("background", "url(images/slide1.jpg)no-repeat center center");
 	}); 
 	</script>
     <script src="js/bootstrap.js"></script>
